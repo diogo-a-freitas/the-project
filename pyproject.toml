@@ -1,0 +1,24 @@
+[project]
+name = "the-project"
+version = "0.1.0"
+description = "2361 - Project Bonanza Extravaganza"
+readme = "README.md"
+authors = [
+    { name = "Diogo Freitas"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pandas<3",
+]
+
+[project.scripts]
+the-project = "the_project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+]
